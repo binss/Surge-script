@@ -22,10 +22,10 @@ hostname = ap?.bilibili.com
 ****************************
 */
 
-const Group = $persistentStore.read('BiliArea_Policy') || 'AsianTV'; //Your blibli policy group name.
-const CN = $persistentStore.read('BiliArea_CN') || 'AsianTV';
-const TW = $persistentStore.read('BiliArea_TW') || 'ProxyTW'; //Your Taiwan sub-policy name.
-const HK = $persistentStore.read('BiliArea_HK') || 'ProxyHK'; //Your HongKong sub-policy name.
+const Group = $persistentStore.read('BiliArea_Policy') || 'Bilibili'; //Your blibli policy group name.
+const CN = $persistentStore.read('BiliArea_CN') || 'LocalTV';
+const TW = $persistentStore.read('BiliArea_TW') || 'TWTV'; //Your Taiwan sub-policy name.
+const HK = $persistentStore.read('BiliArea_HK') || 'HKTV'; //Your HongKong sub-policy name.
 
 var obj = JSON.parse($response.body),
 	obj = (obj.result || obj.data || {}).title || '';
