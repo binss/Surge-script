@@ -77,9 +77,9 @@ let run = EnvInfo();
 
 async function SwitchRegion(play) {
   const Group = 'Bilibili';
-  const CN = 'DIRECT'
-  const TW = 'TWTV'
-  const HK = 'HKTV'
+  const CN = 'DIRECT';
+  const TW = 'TWTV';
+  const HK = 'HKTV';
   const current = await $.getPolicy(Group);
   const area = (() => {
     if (/\u50c5[\u4e00-\u9fa5]+\u6e2f|%20%E6%B8%AF&/.test(play)) {
